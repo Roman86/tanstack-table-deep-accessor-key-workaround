@@ -1,0 +1,49 @@
+{
+  "name": "tanstack-table-deep-accessor-key-workaround",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "source": "src/index.ts",
+  "module": "dist/workaround.esm.js",
+  "main": "dist/workaround.cjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "require": "./dist/workaround.cjs",
+    "default": "./dist/workaround.modern.mjs"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "microbundle --target web -f modern,esm,cjs",
+    "prepublishOnly": "npm run build",
+    "dev": "microbundle --target web -f modern,esm,cjs -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Roman86/tanstack-table-deep-accessor-key-workaround.git"
+  },
+  "keywords": [
+    "tanstack",
+    "table",
+    "deep",
+    "accessor",
+    "key",
+    "workaround"
+  ],
+  "author": "Roman Kozodoi",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "microbundle": "^0.15.1",
+    "prettier": "^3.2.5",
+    "prettier-plugin-multiline-arrays": "^3.0.4"
+  },
+  "peerDependencies": {
+    "@tanstack/react-table": "^8.15.0"
+  }
+}
