@@ -1,6 +1,6 @@
 {
   "name": "tanstack-table-deep-accessor-key-workaround",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "type": "module",
   "source": "src/index.ts",
