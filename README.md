@@ -1,8 +1,10 @@
+# ⚠️ You only need this package if you are using TanStack Table version below v8.20.1
+
 ### What
 
 Workaround for the issue https://github.com/TanStack/table/issues/4754.
 
-Once fixed - you don't need this package.
+Fixed in TanStack Table [v8.20.1](https://github.com/TanStack/table/releases/tag/v8.20.1)
 
 ### How
 
